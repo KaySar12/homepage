@@ -1,18 +1,122 @@
 ---
 # For configuration options and examples, please see:
 # https://gethomepage.dev/latest/configs/services
+- Admin:
+      - NextzenOS:
+            icon:  https://dl.nextzenos.com/images/NextZEN-notext.png
+            href: http://10.0.0.4
+            description: Manage your admin Dashboard
+      - NextNAS:
+            icon: https://static-00.iconduck.com/assets.00/openmediavault-icon-1024x1024-sq785php.png
+            href: http://10.0.0.4:1081
+            description: Manage your NAS
+            widget:
+                type: openmediavault
+                url: http://10.0.0.4:1081
+                username: nextzen
+                password: Smartyourlife123@*
+                method: services.getStatus
+      - Promox:
+            icon: https://camo.githubusercontent.com/cb6c50486cf76c4a9a9a4c7811f8bf97f59f7512d11119a386021086997cae0e/68747470733a2f2f7777772e70726f786d6f782e636f6d2f696d616765732f70726f786d6f782f50726f786d6f785f73796d626f6c5f7374616e646172645f6865782e706e67
+            href: http://10.0.0.2:8006
+            description: Manage your Environment
+            widget:
+                type: proxmox
+                url: https://10.0.0.2:8006
+                username: api@pam!homepage
+                password: 239b8934-5490-46a9-818a-e407a447d60a
+                node: NextZEN
+      - OPNSense:
+            icon: https://docs.infomaniak.cloud/documentation/tutorials/04.firewall/img/opnsense.png
+            href: http://10.0.0.1
+            description: Manage your Firewall
+            widget:
+                type: opnsense
+                url: http://10.0.0.1
+                username: ez0xzbp4rlu0ZuLBcE4Sd2B1Aak/nd/oaw/EYYUsbH5ElecaSTx8Of2RjTW3MJyrL8kvPe32m95IJB0S
+                password: lNSYXMfqFkmkKr5hnRD5wCUUdRNKcp5wVYfZj6SP9Hjoas1f+7DH6wBhWpvTbNs1MIs/qyTXxho+FGyH
+      - Portainer:
+            icon: https://cdn.worldvectorlogo.com/logos/portainer.svg
+            href: http://10.0.0.4:9000
+            description: Manage your Container
+            widget:
+                type: portainer
+                url: http://10.0.0.4:9000
+                env: 2
+                key: ptr_EAeH8LEf6/rGHrSXloaZhTJmBB5iTkRdclATMqLvNwE=
+      - Authentik:
+            icon: https://static-00.iconduck.com/assets.00/authentik-orange-icon-512x391-4kzut6y1.png
+            href: http://10.0.0.26:9000
+            description: Manage your User
+- Business:
+      - NextCloud:
+            icon: https://static-00.iconduck.com/assets.00/nextcloud-icon-2048x2048-5bqg93xb.png
+            href: https://nextcloud.adctopweb.com
+            description: Manage your own cloud
+            widget:
+                type: nextcloud
+                url: https://nextcloud.adctopweb.com
+                username: admin
+                password: 58ebfe6b905a4e1377dd4be2a289595abcd7408594592a0b
+      - NextDNS:
+            icon: https://avatars3.githubusercontent.com/u/8361145?s=200&v=4
+            href: http://10.0.0.1:3000
+            description: Secure your internet
+            widget:
+                type: adguard
+                url: http://10.0.0.1:3000
+                username: nextzen
+                password: Smartyourlife123@*
+      - Odoo:
+            icon: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9ahLste-E-aFqHFrknMlw1UrmLYwqKIC7XWm6AzPkzoNx-Tq8qm-4Df7j5LyHzKMJDkI&usqp=CAU
+            href: http://nexterp.cstsoft.net
+            description: Manage your own Business
+      - WebServer: 
+            icon: https://cdn.worldvectorlogo.com/logos/cloudpanel.svg
+            href: https://10.0.0.3:8443
+            description: Create and Manage your website
+      - HomeAssistant:
+            icon: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Home_Assistant_Logo.svg/2048px-Home_Assistant_Logo.svg.png
+            href: http://10.0.0.6:8123/
+            description: Manage your own home
 
-- My First Group:
-    - My First Service:
-        href: http://localhost/
-        description: Homepage is awesome
 
-- My Second Group:
-    - My Second Service:
-        href: http://localhost/
-        description: Homepage is the best
+- Entertainment:
+      - Jellyfin:
+            icon: https://static-00.iconduck.com/assets.00/jellyfin-icon-2048x2048-tf5ztk6m.png
+            href: http://10.0.0.50:8096
+            description: Your own home cinema
+            widget:
+                type: jellyfin
+                url: http://10.0.0.50:8096
+                key: 0ff73d4974df490a850906d237bfd5d8
+                enableBlocks: true # optional, defaults to false
+                enableNowPlaying: true # optional, defaults to true
+      - Plex:
+            icon: https://static-00.iconduck.com/assets.00/plex-icon-2048x2048-kdgfrhh9.png
+            href: http://10.0.0.4:32400
+            description: Your own home cinema
+        widget:
+            type: plex
+            url: http://10.0.0.4:32400
+            key: mytokenhere # see https://www.plexopedia.com/plex-media-server/general/plex-token/
+- Utilities:
+      - Syncthing:
+            icon: https://upload.wikimedia.org/wikipedia/commons/8/83/SyncthingAugustLogo.png
+            href: http://10.0.0.4:8384/
+            description: Synchronize your data
+      - NextVPN:
+            icon: https://www.svgrepo.com/show/306978/wireguard.svg
+            href: http://10.0.0.4:51821/
+            description: Your own VPN
+      - Pyload:
+            icon: https://raw.githubusercontent.com/pyload/pyload/main/media/logo.png
+            href: http://10.0.0.4:8009
+            description: Manage your own downloader
+            widget:
+                  type: pyload
+                  url: http://10.0.0.4:8009
+                  username: pyload
+                  password: pyload # only needed if set
 
-- My Third Group:
-    - My Third Service:
-        href: http://localhost/
-        description: Homepage is 😎
+

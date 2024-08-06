@@ -1,7 +1,13 @@
 ---
 # For configuration options and examples, please see:
 # https://gethomepage.dev/latest/configs/settings
-
+title: Welcome to NextzenOS
+favicon: https://dl.nextzenos.com/images/NextZEN-notext.png
 providers:
   openweathermap: openweathermapapikey
-  weatherapi: weatherapiapikey
+  weatherapi: 17ab53a513c944799cc51509240508
+  finnhub: cl272dpr01qinfqoi980cl272dpr01qinfqoi98g
+background:
+  image:  https://images.unsplash.com/photo-1502790671504-542ad42d5189?auto=format&fit=crop&w=2560&q=80
+  blue: sm
+

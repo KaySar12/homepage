@@ -2,17 +2,28 @@
 # For configuration options and examples, please see:
 # https://gethomepage.dev/latest/configs/bookmarks
 
-- Developer:
-    - Github:
-        - abbr: GH
-          href: https://github.com/
+- Website:
+    - Nextzen:
+        - abbr: NZ
+          icon: https://dl.nextzenos.com/images/NextZEN-notext.png
+          href: https://nextzenos.com/en
 
 - Social:
-    - Reddit:
-        - abbr: RE
-          href: https://reddit.com/
-
-- Entertainment:
-    - YouTube:
+    - Facebook:
+        - abbr: FB
+          icon: https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg
+          href: https://www.facebook.com/NextZenos
+    - Twitter:
+        - abbr: TW
+          icon: https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?size=338&ext=jpg&ga=GA1.1.1826414947.1722729600&semt=ais_hybrid
+          href: https://x.com/nextzenos
+    - Youtube:
         - abbr: YT
-          href: https://youtube.com/
+          icon: https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png
+          href: https://www.youtube.com/channel/UCtNlYbQXQdJYyutXlUJCQCQ
+
+- Contact US:
+    - Nextzen:
+        - abbr: NZ
+          icon: https://dl.nextzenos.com/images/NextZEN-notext.png
+          href: https://nextzenos.com/contact-us
